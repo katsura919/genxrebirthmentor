@@ -75,7 +75,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/genxmentor/"
+                href="https://www.instagram.com/genxrebirthmentor"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors text-white"
