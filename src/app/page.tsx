@@ -57,7 +57,7 @@ export default function RebirthMentorPage() {
         {/* ================================================
           STICKY CTA
       ================================================ */}
-        <div
+        {/* <div
           className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
             showStickyBtn
               ? "opacity-100 translate-y-0"
@@ -72,7 +72,7 @@ export default function RebirthMentorPage() {
           >
             Book Your Session
           </a>
-        </div>
+        </div> */}
 
         {/* ================================================
           SECTION 1: HERO
