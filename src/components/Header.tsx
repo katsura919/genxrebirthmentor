@@ -59,7 +59,7 @@ export default function Header() {
           </a>
 
           <a
-            href="https://stan.store/genxbirthmentor"
+            href="https://genxrebirthmentor.setmore.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-secondary px-6 py-2.5 font-dm-sans text-sm font-bold uppercase tracking-wider text-white shadow-md hover:bg-cta-hover hover:shadow-lg cursor-pointer transition-colors duration-500"
@@ -127,7 +127,7 @@ export default function Header() {
             </a>
 
             <a
-              href="https://stan.store/genxbirthmentor"
+              href="https://genxrebirthmentor.setmore.com/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

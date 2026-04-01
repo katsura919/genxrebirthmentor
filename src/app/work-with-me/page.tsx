@@ -141,7 +141,7 @@ export default function WorkWithMePage() {
 
               <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
                 <a
-                  href="https://stan.store/genxbirthmentor"
+                  href="https://genxrebirthmentor.setmore.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-secondary px-10 py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-cta-hover hover:shadow-xl hover:-translate-y-1"
@@ -343,7 +343,7 @@ export default function WorkWithMePage() {
               </div>
 
               <a
-                href="https://stan.store/genxbirthmentor"
+                href="https://genxrebirthmentor.setmore.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block w-full rounded-full bg-secondary px-8 py-5 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-700 hover:bg-cta-hover hover:shadow-xl hover:-translate-y-1 sm:inline-block sm:w-auto sm:px-12 ${
@@ -452,7 +452,7 @@ export default function WorkWithMePage() {
                   }`}
                 >
                   <a
-                    href="https://stan.store/genxbirthmentor"
+                    href="https://genxrebirthmentor.setmore.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block rounded-full bg-secondary px-10 py-4 font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-cta-hover hover:shadow-xl hover:-translate-y-1"
@@ -624,7 +624,7 @@ export default function WorkWithMePage() {
 
                 <div className="mt-auto">
                   <a
-                    href="https://stan.store/genxbirthmentor"
+                    href="https://genxrebirthmentor.setmore.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full rounded-full border-2 border-secondary py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-secondary transition-all duration-300 hover:bg-secondary hover:text-white hover:-translate-y-1"
@@ -692,7 +692,7 @@ export default function WorkWithMePage() {
 
                 <div className="mt-auto">
                   <a
-                    href="https://stan.store/genxbirthmentor"
+                    href="https://genxrebirthmentor.setmore.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full rounded-full bg-white py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-primary shadow-md transition-all duration-300 hover:bg-accent-dark hover:text-white hover:-translate-y-1"
@@ -755,7 +755,7 @@ export default function WorkWithMePage() {
 
                 <div className="mt-auto">
                   <a
-                    href="https://stan.store/genxbirthmentor"
+                    href="https://genxrebirthmentor.setmore.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full rounded-full border-2 border-primary bg-primary py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-primary/80 hover:-translate-y-1"
@@ -777,7 +777,7 @@ export default function WorkWithMePage() {
               <p className="font-inter text-text-secondary">
                 Not sure which package is right for you?{" "}
                 <a
-                  href="https://stan.store/genxbirthmentor"
+                  href="https://genxrebirthmentor.setmore.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-primary underline underline-offset-4 transition-all hover:text-secondary"
@@ -934,7 +934,7 @@ export default function WorkWithMePage() {
 
                 <div className="flex flex-col gap-3 pt-4 sm:flex-row sm:gap-4">
                   <a
-                    href="https://stan.store/genxbirthmentor"
+                    href="https://genxrebirthmentor.setmore.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full bg-secondary px-8 py-4 text-center font-dm-sans text-sm font-semibold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:bg-cta-hover hover:-translate-y-1"
@@ -1065,7 +1065,7 @@ export default function WorkWithMePage() {
               </p>
               <div className="flex flex-col items-center gap-4 pt-4 sm:flex-row sm:justify-center">
                 <a
-                  href="https://stan.store/genxbirthmentor"
+                  href="https://genxrebirthmentor.setmore.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full rounded-full bg-secondary px-8 py-5 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-xl transition-all duration-300 hover:bg-cta-hover hover:shadow-2xl hover:-translate-y-1 sm:w-auto sm:px-12 sm:text-lg"
