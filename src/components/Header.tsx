@@ -29,8 +29,9 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 ${isScrolled || isMobileMenuOpen ? "bg-white shadow-sm" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 ${
+        isScrolled || isMobileMenuOpen ? "bg-white shadow-sm" : "bg-transparent"
+      }`}
     >
       {/* Main nav bar - fixed height so nothing shifts */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -58,7 +59,7 @@ export default function Header() {
           </a>
 
           <a
-            href="https://genxrebirthmentor.setmore.com"
+            href="https://stan.store/genxbirthmentor"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-secondary px-6 py-2.5 font-dm-sans text-sm font-bold uppercase tracking-wider text-white shadow-md hover:bg-cta-hover hover:shadow-lg cursor-pointer transition-colors duration-500"
@@ -117,7 +118,6 @@ export default function Header() {
               Take Quiz
             </a>
 
-
             <a
               href="/work-with-me"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -126,9 +126,8 @@ export default function Header() {
               Work With Me
             </a>
 
-
             <a
-              href="https://genxrebirthmentor.setmore.com"
+              href="https://stan.store/genxbirthmentor"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

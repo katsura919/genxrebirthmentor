@@ -344,7 +344,7 @@ export default function QuizPage() {
                     and support, join the Gen X Rebirth Mentorship Experience.
                   </p>
                   <a
-                    href="https://genxrebirthmentor.setmore.com"
+                    href="https://stan.store/genxbirthmentor"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-block rounded-full bg-accent-dark px-10 py-5 text-lg font-bold text-white shadow-lg hover:bg-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl uppercase tracking-wider"

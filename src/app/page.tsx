@@ -65,7 +65,7 @@ export default function RebirthMentorPage() {
           }`}
         >
           <a
-            href="https://genxrebirthmentor.setmore.com"
+            href="https://stan.store/genxbirthmentor"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full bg-secondary px-6 py-3 font-dm-sans text-sm font-semibold uppercase tracking-wider text-white shadow-2xl transition-all hover:bg-cta-hover hover:-translate-y-1"
@@ -111,7 +111,7 @@ export default function RebirthMentorPage() {
                   Take the Rebirth Reflection Quiz
                 </a>
                 <a
-                  href="https://genxrebirthmentor.setmore.com"
+                  href="https://stan.store/genxbirthmentor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border-2 border-accent-dark bg-accent-dark px-8 py-4 text-center font-dm-sans text-base font-medium uppercase tracking-wider text-white transition-all duration-300 hover:bg-primary hover:text-white hover:-translate-y-1"
@@ -482,7 +482,7 @@ export default function RebirthMentorPage() {
                   <p>
                     Until one day, you look in the mirror and wonder:
                     <span className="mt-3 block font-cormorant text-2xl italic text-primary">
-                      &ldquo;Who even am I anymore?&rdquo;
+                      &ldquo;Who am I anymore?&rdquo;
                     </span>
                   </p>
                   <p>
@@ -720,7 +720,7 @@ export default function RebirthMentorPage() {
                   ))}
                 </ul>
                 <a
-                  href="https://genxrebirthmentor.setmore.com"
+                  href="https://stan.store/genxbirthmentor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 block rounded-full bg-secondary py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-md transition-all duration-300 hover:bg-cta-hover hover:-translate-y-1"
@@ -787,7 +787,7 @@ export default function RebirthMentorPage() {
                   ))}
                 </ul>
                 <a
-                  href="https://genxrebirthmentor.setmore.com"
+                  href="https://stan.store/genxbirthmentor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 block rounded-full bg-white py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider text-primary shadow-md transition-all duration-300 hover:bg-accent-dark hover:text-white hover:-translate-y-1"
@@ -989,7 +989,7 @@ export default function RebirthMentorPage() {
                 </p>
                 <div className="pt-4">
                   <a
-                    href="https://genxrebirthmentor.setmore.com"
+                    href="https://stan.store/genxbirthmentor"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block rounded-full bg-secondary px-10 py-4 font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-cta-hover hover:shadow-xl hover:-translate-y-1"
@@ -1053,7 +1053,7 @@ export default function RebirthMentorPage() {
               </p>
               <div className="flex flex-col items-center gap-4 pt-4 sm:flex-row sm:justify-center">
                 <a
-                  href="https://genxrebirthmentor.setmore.com"
+                  href="https://stan.store/genxbirthmentor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-secondary px-12 py-5 font-dm-sans text-lg font-semibold uppercase tracking-wider text-white shadow-xl transition-all duration-300 hover:bg-cta-hover hover:shadow-2xl hover:-translate-y-1"
