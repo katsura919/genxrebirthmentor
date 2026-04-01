@@ -70,8 +70,8 @@ export default function Footer() {
               <Logo className="h-10 w-auto text-white" />
             </Link>
             <p className="font-inter text-white/80 leading-relaxed">
-              Gen X Authority Mentor is what happens when a woman stops
-              surviving and starts choosing.
+              Gen X Rebirth Mentor is what happens when a woman stops surviving
+              and starts choosing.
             </p>
             <div className="flex gap-4">
               <a
@@ -96,7 +96,7 @@ export default function Footer() {
                 href="mailto:hello@genxauthoritymentor.com"
                 className="font-inter text-white/80 hover:text-white transition-colors"
               >
-                hello@genxauthoritymentor.com
+                hello@genrebirthmentormentor.com
               </a>
             </div>
           </div>
