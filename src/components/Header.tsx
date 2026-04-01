@@ -51,24 +51,10 @@ export default function Header() {
           </a>
 
           <a
-            href="/rebirth-mentor"
-            className="font-dm-sans text-sm font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-300 cursor-pointer"
-          >
-            My Journey
-          </a>
-
-          <a
             href="/work-with-me"
             className="font-dm-sans text-sm font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-300 cursor-pointer"
           >
             Work With Me
-          </a>
-
-          <a
-            href="/webinar/how-to-leverage-your-income-2026"
-            className="font-dm-sans text-sm font-bold uppercase tracking-wider text-primary hover:text-secondary transition-colors duration-300 cursor-pointer"
-          >
-            Webinar
           </a>
 
           <a
@@ -77,7 +63,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="rounded-full bg-secondary px-6 py-2.5 font-dm-sans text-sm font-bold uppercase tracking-wider text-white shadow-md hover:bg-cta-hover hover:shadow-lg cursor-pointer transition-colors duration-500"
           >
-            Book a Call
+            Book Now
           </a>
         </div>
 
@@ -131,13 +117,6 @@ export default function Header() {
               Take Quiz
             </a>
 
-            <a
-              href="/rebirth-mentor"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full py-2 text-center font-dm-sans text-base font-bold uppercase tracking-wider text-primary"
-            >
-              My Journey
-            </a>
 
             <a
               href="/work-with-me"
@@ -147,13 +126,6 @@ export default function Header() {
               Work With Me
             </a>
 
-            <a
-              href="/webinar/how-to-leverage-your-income-2026"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full py-2 text-center font-dm-sans text-base font-bold uppercase tracking-wider text-primary"
-            >
-              Webinar
-            </a>
 
             <a
               href="https://genxrebirthmentor.setmore.com"
@@ -162,7 +134,7 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full max-w-xs rounded-full bg-secondary py-3.5 text-center font-dm-sans text-base font-bold uppercase tracking-wider text-white shadow-lg mt-2"
             >
-              Book a Call
+              Book Now
             </a>
           </div>
         </div>
