@@ -595,7 +595,7 @@ export default function WorkWithMePage() {
 
                 <div className="mb-8 flex items-baseline gap-2">
                   <span className="font-playfair text-5xl font-bold text-text-primary">
-                    $347
+                    $797
                   </span>
                   <span className="font-inter text-text-secondary">USD</span>
                 </div>
@@ -663,7 +663,7 @@ export default function WorkWithMePage() {
 
                 <div className="mb-8 flex items-baseline gap-2">
                   <span className="font-playfair text-5xl font-bold text-white">
-                    $497
+                    $1,499
                   </span>
                   <span className="font-inter text-white/70">USD</span>
                 </div>
@@ -726,7 +726,7 @@ export default function WorkWithMePage() {
 
                 <div className="mb-8 flex items-baseline gap-2">
                   <span className="font-playfair text-5xl font-bold text-text-primary">
-                    $697
+                    $2,400
                   </span>
                   <span className="font-inter text-text-secondary">USD</span>
                 </div>
