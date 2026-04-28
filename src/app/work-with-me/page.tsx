@@ -132,7 +132,7 @@ export default function WorkWithMePage() {
               {/* Price pill */}
               <div className="inline-flex flex-wrap items-center gap-2 rounded-full bg-secondary/10 px-5 py-3 sm:gap-3 sm:px-6">
                 <span className="font-dm-sans text-2xl font-bold text-secondary">
-                  $87
+                  $97
                 </span>
                 <span className="font-inter text-sm text-text-secondary sm:text-base">
                   Rebirth Strategy Session
@@ -353,7 +353,7 @@ export default function WorkWithMePage() {
                 }`}
                 style={{ transitionDelay: "600ms" }}
               >
-                Book Your $87 Session
+                Book Your $97 Session
               </a>
             </div>
           </div>
@@ -457,7 +457,7 @@ export default function WorkWithMePage() {
                     rel="noopener noreferrer"
                     className="inline-block rounded-full bg-secondary px-10 py-4 font-dm-sans text-base font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-cta-hover hover:shadow-xl hover:-translate-y-1"
                   >
-                    Book Your $87 Session
+                    Book Your $97 Session
                   </a>
                 </div>
               </div>
@@ -782,7 +782,7 @@ export default function WorkWithMePage() {
                   rel="noopener noreferrer"
                   className="font-semibold text-primary underline underline-offset-4 transition-all hover:text-secondary"
                 >
-                  Start with an $87 Strategy Session
+                  Start with an $97 Strategy Session
                 </a>{" "}
                 and we&apos;ll figure it out together.
               </p>
@@ -978,7 +978,7 @@ export default function WorkWithMePage() {
                 {[
                   {
                     q: '"Is this really worth it?"',
-                    a: "You've spent years investing in everyone else. This is 60 minutes and $87 to invest in yourself. One session can shift the way you see everything. That's not a cost. That's a turning point.",
+                    a: "You've spent years investing in everyone else. This is 60 minutes and $97 to invest in yourself. One session can shift the way you see everything. That's not a cost. That's a turning point.",
                   },
                   {
                     q: '"Can I actually change at this point in my life?"',
@@ -1074,7 +1074,7 @@ export default function WorkWithMePage() {
                 </a>
               </div>
               <p className="font-inter text-sm text-text-secondary">
-                $87 · 60 minutes · Private 1:1 with Celeste
+                $97 · 60 minutes · Private 1:1 with Celeste
               </p>
             </div>
           </div>
