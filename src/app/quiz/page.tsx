@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import { questions, resultsData } from "../../data/quiz.data";
-import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function QuizPage() {
   const [step, setStep] = useState<"intro" | "quiz" | "email" | "results">(
@@ -57,32 +57,33 @@ export default function QuizPage() {
     setIsSubmitting(false);
   };
 
+  const result = resultsData[calculatedResult];
+
   return (
-    <main className="min-h-screen bg-bg-main pt-60 ">
+    <main className="min-h-screen bg-bg-main pt-60">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         {/* Intro Step */}
         {step === "intro" && (
           <div className="space-y-8 text-center animate-in fade-in slide-in-from-bottom-4 duration-700 pb-32">
             <h1 className="font-playfair text-4xl font-bold text-accent-dark sm:text-5xl md:text-6xl">
-              The Rebirth Reflection Quiz
+              What Phase of Your Life &amp; Income Are You In Right Now?
             </h1>
             <p className="font-dm-sans text-xl font-medium tracking-wide text-primary">
-              Discover where you are in your journey of release, rebuilding, and
-              self-reconnection.
+              Get matched with the exact structure, support, and next step you
+              need to move forward.
             </p>
             <hr className="mx-auto w-24 border-primary/20" />
             <div className="mx-auto max-w-2xl space-y-4 font-inter text-xl text-text-primary/80">
               <p>
-                You’ve spent years showing up, holding it together, and being
-                what everyone else needed.
+                You&apos;ve been surviving. Managing. Pushing through.
               </p>
               <p>
-                Somewhere along the way, you may have lost parts of yourself.
+                But what you really need is a system that supports you—and a
+                clear next step that matches where you actually are.
               </p>
               <p className="font-medium text-text-primary">
-                This quiz will help you understand where you are right now, what
-                may be keeping you stuck or drained, and what your next step
-                looks like as you reconnect with yourself.
+                This quiz will match you with the exact structure, support, and
+                next step you need to move forward in under 2 minutes.
               </p>
             </div>
             <div className="pt-8">
@@ -90,7 +91,7 @@ export default function QuizPage() {
                 onClick={() => setStep("quiz")}
                 className="rounded-full bg-accent-dark px-10 py-4 text-xl font-bold text-white shadow-lg hover:bg-accent-dark/90 transition-all hover:-translate-y-1 cursor-pointer"
               >
-                Your Rebirth Starts with Awareness
+                Start with the First Step
               </button>
             </div>
           </div>
@@ -192,8 +193,8 @@ export default function QuizPage() {
               Your Results Are Ready
             </h2>
             <p className="mb-8 font-inter text-text-primary/80">
-              Enter your email to reveal your archetype and receive your
-              personalized reflection guide.
+              Enter your email to reveal your phase and receive your
+              personalized next step.
             </p>
             <form
               onSubmit={(e) => {
@@ -234,15 +235,16 @@ export default function QuizPage() {
                 Your Quiz Results
               </p>
               <h1 className="mb-4 font-playfair text-4xl font-bold text-accent-dark sm:text-5xl md:text-6xl">
-                {resultsData[calculatedResult].title}
+                {result.title}
               </h1>
-              {resultsData[calculatedResult].subtitle && (
+              {result.subtitle && (
                 <>
                   <p className="mb-8 font-dm-sans text-xl text-primary font-medium">
-                    {resultsData[calculatedResult].subtitle}
+                    {result.subtitle}
                   </p>
                   <p className="mx-auto mb-10 max-w-3xl font-inter text-lg leading-relaxed text-text-primary/80">
-                    No matter where you are, your rebirth has already begun.
+                    No matter where you are, your next step is right in front of
+                    you.
                   </p>
                 </>
               )}
@@ -254,37 +256,33 @@ export default function QuizPage() {
                     Core Pattern
                   </h3>
                   <ul className="space-y-3">
-                    {resultsData[calculatedResult].corePattern.map(
-                      (item, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-start gap-4 text-lg text-text-primary leading-relaxed"
-                        >
-                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
-                          {item}
-                        </li>
-                      ),
-                    )}
+                    {result.corePattern.map((item, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-start gap-4 text-lg text-text-primary leading-relaxed"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 {/* What's Really Happening */}
                 <div className="rounded-3xl bg-indigo-50/50 p-8 shadow-sm ring-1 ring-indigo-50">
                   <h3 className="mb-6 font-playfair text-2xl font-bold text-accent-dark">
-                    What’s Really Happening
+                    What&apos;s Really Happening
                   </h3>
                   <ul className="space-y-3">
-                    {resultsData[calculatedResult].whatsHappening.map(
-                      (item, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-start gap-4 text-lg text-text-primary leading-relaxed"
-                        >
-                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-dark"></span>
-                          {item}
-                        </li>
-                      ),
-                    )}
+                    {result.whatsHappening.map((item, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-start gap-4 text-lg text-text-primary leading-relaxed"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-dark"></span>
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
@@ -294,29 +292,25 @@ export default function QuizPage() {
                     Hidden Cost
                   </h3>
                   <ul className="space-y-3">
-                    {resultsData[calculatedResult].hiddenCost.map(
-                      (item, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-start gap-4 text-lg text-text-primary leading-relaxed"
-                        >
-                          <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-rose-400"></span>
-                          {item}
-                        </li>
-                      ),
-                    )}
+                    {result.hiddenCost.map((item, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-start gap-4 text-lg text-text-primary leading-relaxed"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-rose-400"></span>
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 {/* Rebirth */}
-                <div className="rounded-3xl bg-primary  p-8 md:p-10 shadow-lg text-white">
+                <div className="rounded-3xl bg-primary p-8 md:p-10 shadow-lg text-white">
                   <h3 className="mb-6 font-playfair text-2xl font-bold text-white">
-                    <span className="text-white">
-                      What Rebirth Looks Like for You
-                    </span>
+                    What This Phase Looks Like for You
                   </h3>
                   <ul className="space-y-4">
-                    {resultsData[calculatedResult].rebirth.map((item, idx) => (
+                    {result.rebirth.map((item, idx) => (
                       <li
                         key={idx}
                         className="flex items-start gap-4 text-lg text-white/90 leading-relaxed"
@@ -329,29 +323,136 @@ export default function QuizPage() {
                 </div>
               </div>
 
-              {/* Book a Call CTA */}
-              <div className="mt-20 mx-auto max-w-4xl text-center bg-white p-10 md:p-16 rounded-[2.5rem] border-2 border-primary/5 shadow-xl relative overflow-hidden group hover:border-primary/20 transition-colors duration-500">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-secondary/20 transition-colors duration-700" />
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 group-hover:bg-primary/10 transition-colors duration-700" />
+              {/* Product CTA */}
+              <div className="mt-20 mx-auto max-w-4xl">
+                <p className="mb-3 font-dm-sans text-sm font-bold uppercase tracking-widest text-text-secondary">
+                  Your Next Step
+                </p>
+                <h2 className="mb-4 font-playfair text-3xl md:text-4xl font-bold text-primary">
+                  {result.product.name}
+                </h2>
+                <p className="mb-10 font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                  {result.product.tagline}
+                </p>
 
-                <div className="relative z-10 space-y-8">
-                  <h3 className="font-playfair text-3xl md:text-5xl font-bold text-primary">
-                    Book Your Rebirth Session
-                  </h3>
-                  <p className="font-inter text-text-primary/70 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                    If you’re ready to stop abandoning yourself, reconnect with
-                    who you are, and step into your next chapter with clarity
-                    and support, join the Gen X Rebirth Mentorship Experience.
-                  </p>
-                  <a
-                    href="https://genxrebirthmentor.setmore.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block rounded-full bg-accent-dark px-10 py-5 text-lg font-bold text-white shadow-lg hover:bg-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl uppercase tracking-wider"
-                  >
-                    Book Your Rebirth Session
-                  </a>
-                </div>
+                {/* Single product (A, B, C) */}
+                {!result.product.packages && (
+                  <div className="rounded-[2.5rem] border-2 border-primary/10 bg-white shadow-xl overflow-hidden">
+                    {result.product.image && (
+                      <div className="relative h-64 sm:h-80 w-full">
+                        <Image
+                          src={result.product.image}
+                          alt={result.product.name}
+                          fill
+                          className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-white/60 to-transparent" />
+                      </div>
+                    )}
+                    <div className="p-8 md:p-12">
+                      <p className="mb-6 font-dm-sans text-sm font-semibold uppercase tracking-wider text-secondary">
+                        This will help you:
+                      </p>
+                      <ul className="mb-8 space-y-3">
+                        {result.product.benefits.map((benefit, idx) => (
+                          <li
+                            key={idx}
+                            className="flex items-center gap-3 font-inter text-lg text-text-primary"
+                          >
+                            <CheckCircleIcon className="h-5 w-5 flex-shrink-0 text-secondary" />
+                            {benefit}
+                          </li>
+                        ))}
+                      </ul>
+
+                      {/* Pricing options (A only) */}
+                      {result.product.pricingOptions ? (
+                        <div className="space-y-3">
+                          {result.product.pricingOptions.map((opt, idx) => (
+                            <a
+                              key={idx}
+                              href={opt.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`block w-full rounded-full py-4 text-center font-dm-sans text-base font-semibold uppercase tracking-wider shadow-md transition-all duration-300 hover:-translate-y-1 ${
+                                idx === 0
+                                  ? "bg-secondary text-white hover:bg-cta-hover"
+                                  : "border-2 border-secondary text-secondary hover:bg-secondary hover:text-white"
+                              }`}
+                            >
+                              {opt.label}
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        <a
+                          href={result.product.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-full rounded-full bg-accent-dark py-5 text-center font-dm-sans text-lg font-bold text-white shadow-lg hover:bg-primary transition-all duration-300 hover:-translate-y-1 uppercase tracking-wider"
+                        >
+                          {result.product.cta}
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* Coaching packages (D) */}
+                {result.product.packages && (
+                  <div className="space-y-6">
+                    {result.product.image && (
+                      <div className="relative h-48 w-full overflow-hidden rounded-3xl mb-8">
+                        <Image
+                          src={result.product.image}
+                          alt={result.product.name}
+                          fill
+                          className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/10" />
+                      </div>
+                    )}
+                    {result.product.packages.map((pkg, idx) => (
+                      <div
+                        key={idx}
+                        className="rounded-[2rem] border-2 border-primary/10 bg-white p-8 shadow-lg hover:-translate-y-1 transition-all duration-300"
+                      >
+                        <div className="mb-4 flex items-start justify-between gap-4">
+                          <div>
+                            <h3 className="font-playfair text-2xl font-bold text-primary">
+                              {pkg.name}
+                            </h3>
+                            <p className="font-dm-sans text-sm font-semibold text-secondary mt-1">
+                              {pkg.duration}
+                            </p>
+                          </div>
+                        </div>
+                        <p className="mb-4 font-inter text-text-secondary italic">
+                          {pkg.tagline}
+                        </p>
+                        <ul className="mb-6 space-y-2">
+                          {pkg.benefits.map((b, bidx) => (
+                            <li
+                              key={bidx}
+                              className="flex items-center gap-3 font-inter text-text-primary"
+                            >
+                              <CheckCircleIcon className="h-5 w-5 flex-shrink-0 text-secondary" />
+                              {b}
+                            </li>
+                          ))}
+                        </ul>
+                        <a
+                          href={pkg.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-full rounded-full bg-accent-dark py-4 text-center font-dm-sans text-base font-bold text-white shadow-md hover:bg-primary transition-all duration-300 hover:-translate-y-1 uppercase tracking-wider"
+                        >
+                          {pkg.cta}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
