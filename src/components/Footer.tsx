@@ -96,7 +96,7 @@ export default function Footer() {
                 href="mailto:hello@genxauthoritymentor.com"
                 className="font-inter text-white/80 hover:text-white transition-colors"
               >
-                hello@genrebirthmentormentor.com
+                hello@genrebirthmentor.com
               </a>
             </div>
           </div>
