@@ -67,14 +67,12 @@ export default function RebirthMentorPage() {
                 Gen X Rebirth Mentor
               </p>
               <h1 className="font-playfair text-4xl font-bold leading-tight text-primary sm:text-5xl lg:text-5xl xl:text-6xl">
-                Turn Chaos Into Structure…
-                <span className="mt-2 block text-accent-dark italic">
-                  And Structure Into Income
-                </span>
+                Get organized, Build Systems, and Increase your Revenue.
+
               </h1>
               <p className="font-inter max-w-xl text-xl leading-relaxed text-text-secondary">
                 A simple, real-life system for the woman who&apos;s done
-                surviving—and ready to build a life and income that actually
+                surviving and ready to build a life and income that actually
                 supports her.
               </p>
               <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
