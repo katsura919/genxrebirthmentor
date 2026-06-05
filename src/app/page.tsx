@@ -67,7 +67,7 @@ export default function RebirthMentorPage() {
                 Gen X Rebirth Mentor
               </p>
               <h1 className="font-playfair text-4xl font-bold leading-tight text-primary sm:text-5xl lg:text-5xl xl:text-6xl">
-                Get organized, Build Systems, and Increase your Revenue.
+                Simplify Operations and Increase Revenue with Smarter Systems.
 
               </h1>
               <p className="font-inter max-w-xl text-xl leading-relaxed text-text-secondary">
